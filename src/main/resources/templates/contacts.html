@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <title th:text="${contacts}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <header th:insert="blocks/header.html :: header"></header>
+
+    <h1>My contact</h1>
+    <p>Phone: +375298952882</p>
+    <p>Adress : Mazyr, Druzhby 5</p>
+    <p>Email: jeakkeyj@gmail.com</p>
+    <hr size="3" noshade="3">
+
+    <form class="" action="mailto:streetbunt9@mail.ru" method="post" enctype="text/plain">
+        <label>Your name: </label>
+        <input type ="text" name="" value=""/>
+        <input type ="color" name="" value=""/><br>
+        <label>E-mail:</label>
+        <input type ="email" name="" value=""/><br>
+        <label>Your message:</label><br>
+        <textarea name="YourMessage" rows="3" cols="20"></textarea><br>
+        <input type ="submit" name=""/>
+    </form>
+
+<div th:insert="blocks/footer.html :: footer"></div>
+
+</body>
+</html>
